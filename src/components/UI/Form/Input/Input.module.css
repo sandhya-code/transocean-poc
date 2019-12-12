@@ -1,21 +1,21 @@
 .Input {
     display: block;
     width: 100%;
-    height: calc(1.5rem + .75rem + 2px);
+    height: 50px;
     padding: .375rem .75rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #000000;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border: 1px solid #00A1D5;
+    border-radius: 8px;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .Input:focus {
-    color: #495057;
+    color: #000000;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;

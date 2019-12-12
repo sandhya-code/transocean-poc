@@ -9,6 +9,7 @@ const Collapsible = props => {
         id={'collapsible' + props.id}
         className={classes.ToggleControl}
         type='checkbox'
+        checked
       />
 
       <label

@@ -4,7 +4,7 @@ import Input from '../../components/UI/Form/Input/Input';
 import InputPassword from '../../components/UI/Form/InputPassword/InputPassword';
 import Button from '../../components/UI/Button/Button';
 import classes from './Login.module.css';
-import logo from '../../../src/assets/logo.jpg';
+import logo from '../../../src/assets/Transocean_logo.png';
 import { withRouter } from 'react-router-dom';
 
 const Login = props => {
@@ -25,7 +25,9 @@ const Login = props => {
           <InputPassword label='Password'></InputPassword>
         </div>
         <div className={classes.ButtonRow}>
-          <a href='/'>Reset Password</a>
+          <a className={classes.ResetPassword} href='/'>
+            Reset Password
+          </a>
           <Button btnType='Theme' clicked={onLoginHandler}>
             Login
           </Button>

@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import classes from './Input.module.css';
 
-const Input = props => {
-  return (
-    <div className='form-group'>
-      {/* <label htmlFor='inputText'>{props.label}</label> */}
-      <input
-        className='Input'
-        id='inputText'
-        type='text'
-        placeholder={props.label}
-      />
-    </div>
-  );
-};
-
-export default Input;
+export default class Input extends Component {
+  render() {
+    return (
+      <div className='form-group'>
+        <input
+          className={classes.Input}
+          type='text'
+          placeholder={this.props.label}
+        />
+      </div>
+    );
+  }
+}

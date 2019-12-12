@@ -25,13 +25,21 @@
     background-image: url(./../../assets/login_background.png);
     background-size: cover;
     background-position: center;
-    border-radius: 0 0.5rem 0 0.5rem;
+    border-radius: 0 12px 12px 0;
 }
 
 .ButtonRow {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.ResetPassword {
+    font-size: 16px;
+    text-decoration: underline;
+    letter-spacing: 0;
+    color: #00546F;
+    height: 24px;
 }
 
 

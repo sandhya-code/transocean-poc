@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import classes from './InputPassword.module.css';
 
-const InputPassword = props => {
-  return (
-    <div className='form-group'>
-      {/* <label htmlFor='inputText'>{props.label}</label> */}
-      <input
-        className='Input'
-        id='inputText'
-        type='password'
-        placeholder={props.label}
-      />
-    </div>
-  );
-};
-
-export default InputPassword;
+export default class InputPassword extends Component {
+  render() {
+    return (
+      <div className='form-group'>
+        <input
+          className={classes.InputPassword}
+          id='inputText'
+          type='password'
+          placeholder={this.props.label}
+        />
+      </div>
+    );
+  }
+}
