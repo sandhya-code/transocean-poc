@@ -1,0 +1,43 @@
+.Button {
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100px;
+    height: 58px;
+    font-size: 20px;
+}
+
+
+.Theme {
+    background-color: #F8BD00;
+    min-width: 200px;
+}
+
+.Success {
+    background-color: #2ECC40;
+    color: #FFF;
+}
+
+.Primary {
+    background-color: #00A1D5;
+    color: #FFF;
+}
+
+.Secondary {
+    background-color: #CCCCCC;
+}
+
+
+.Danger {
+    color: #944317;
+}

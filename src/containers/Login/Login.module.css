@@ -1,0 +1,50 @@
+.LoginBackgroundImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../../assets/login_background.png);
+}
+
+.Logo {
+    margin: 3rem 0;
+}
+
+.FormContainer {
+    width: 60%;
+    padding: 3rem 8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Form {
+    width: 100%;
+}
+
+.SideImage {
+    width: 40%;
+    background-image: url(./../../assets/login_background.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+
+.ButtonRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 576px) {
+
+    .FormContainer {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .FormContainer {
+        width: 60%;
+    }
+}

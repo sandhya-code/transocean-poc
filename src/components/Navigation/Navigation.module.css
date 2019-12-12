@@ -1,0 +1,28 @@
+.Naviation {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    margin: 0 0 0.5rem 0;
+    color: #FFF;
+}
+
+.Title {
+    margin: 0rem auto 0rem 1rem;
+    /* margin-left: 0.5rem;
+    margin-right: auto; */
+}
+
+.SignOut,
+.User {
+    background-color: #F8BD00;
+    color: #00546F;
+    box-sizing: border-box;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 18px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}

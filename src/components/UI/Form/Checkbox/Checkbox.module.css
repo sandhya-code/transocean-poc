@@ -1,0 +1,46 @@
+.Checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.Checkbox input {
+    height: 2rem;
+    width: 2rem;
+}
+
+.Checkbox * {
+    position: absolute;
+}
+
+.Checkbox .CheckboxVisible {
+    border: 2px solid #00A1D5;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    background: #fff;
+    border: 1px solid hsl(0, 0, 87%);
+    border-radius: 3px;
+}
+
+.Checkbox input {
+    z-index: 1;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.Checkbox input:checked+.CheckboxVisible {
+    background: #00A1D5;
+    border-color: #00A1D5;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyNmZmYnLz48L3N2Zz4=);
+}
+
+.Checkbox input:focus+.CheckboxVisible {
+    border-color: #00A1D5;
+}

@@ -1,0 +1,40 @@
+.Card {
+    background-color: ivory;
+    box-shadow: 0px 24px 24px #00000033;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.Login {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width: 600px) {
+    .Login {
+        width: 100%;
+        min-height: 50vh;
+    }
+}
+
+@media(min-width: 1024px) {
+    .Login {
+        width: 90%;
+        min-height: 80vh;
+    }
+}
+
+@media(min-width: 1200px) {
+    .Login {
+        width: 100%;
+        min-height: 80vh;
+    }
+}

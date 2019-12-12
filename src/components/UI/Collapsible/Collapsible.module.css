@@ -1,0 +1,66 @@
+.Collapsible {
+    margin-bottom: 1.2rem 0;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 1rem;
+}
+
+
+.CollapsibleHeader {
+    display: block;
+    background: #F2F2F2;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-out;
+    padding: 1rem;
+}
+
+.CollapsibleBody {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.CollapsibleBody .CollapsibleContent {
+    border: 1px solid #CCCCCC;
+    background-color: #FFF;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: .5rem 1rem;
+}
+
+.Collapse,
+.Open {
+    color: var(--color-primary-dark);
+}
+
+.Collapse {
+    display: none;
+}
+
+.Open {
+    display: inline-block;
+}
+
+/* // input[type='checkbox']  */
+.ToggleControl {
+    display: none;
+}
+
+.ToggleControl:checked+.CollapsibleHeader .Collapse {
+    display: inline-block;
+}
+
+.ToggleControl:checked+.CollapsibleHeader .Open {
+    display: none;
+}
+
+
+.ToggleControl:checked+.CollapsibleHeader+.CollapsibleBody {
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.ToggleControl:checked+.CollapsibleHeader {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}

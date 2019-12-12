@@ -1,0 +1,46 @@
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+}
+
+.Container {
+  min-height: calc(100vh - 150px);
+}
+
+/* Media Queries manager */
+/* 
+0-600px:      Phone
+600-900px:    Tablet Potrait
+900-1200px:   Tablet Landscape
+[1200 - 1800] other normal screen
+1800px + :    Big Desktop
+ */
+
+
+@media(min-width: 600px) {
+  .App {
+    width: 98%;
+    min-height: 98vh;
+    margin: auto;
+  }
+}
+
+@media(min-width: 1024px) {
+  .App {
+    width: 98%;
+    min-height: 98vh;
+    margin: auto;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .App {
+    width: 1024px;
+    min-height: 98vh;
+    margin: auto;
+  }
+}

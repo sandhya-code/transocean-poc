@@ -1,0 +1,56 @@
+.DailyInstructions {
+    background-color: ivory;
+    box-shadow: 0px 24px 24px #00000033;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.DailyInstructions .DrillingParameterButton {
+    position: absolute;
+    right: 10px;
+    background-color: #00A1D5;
+    border-radius: 32px;
+    font-size: 16px;
+    padding: 12px 16px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+.DailyInstructions .Title {
+    margin-bottom: 2rem;
+}
+
+.DailyInstructions .Title h5 {
+    font-weight: normal;
+    color: #4B4E53;
+    padding-left: 3rem;
+}
+
+@media(min-width: 600px) {
+    .DailyInstructions {
+        height: 70vh;
+    }
+}
+
+@media(min-width: 1024px) {
+    .DailyInstructions {
+        height: 70vh;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .DailyInstructions {
+        height: 71vh;
+    }
+}

@@ -1,0 +1,27 @@
+.DailyChecklistContainer {
+    margin-bottom: 0.8rem;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+@media(min-width: 600px) {
+    .DailyChecklistContainer {
+        height: 70vh;
+    }
+}
+
+@media(min-width: 1024px) {
+    .DailyChecklistContainer {
+        height: 70vh;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .DailyChecklistContainer {
+        height: 71vh;
+    }
+}

@@ -1,0 +1,35 @@
+.DrillingParameter {
+    border-radius: 1rem;
+
+}
+
+.DrillingParameter .Header {
+    background-color: #00A1D5;
+    color: #FFF;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.DrillingParameter hr {
+    margin: 1rem 0;
+}
+
+.CloseButton {
+    background-color: #FF5722;
+    border-radius: 32px;
+    font-size: 16px;
+    padding: 12px 24px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

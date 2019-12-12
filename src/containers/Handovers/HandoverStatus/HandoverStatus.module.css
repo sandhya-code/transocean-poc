@@ -1,0 +1,35 @@
+.HandoverStatus {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.HandoverStatus>* {
+    margin: 0;
+    padding: 0;
+}
+
+.HandoverStatus hr {
+    width: 100%;
+}
+
+
+.TimeLine {
+
+    display: flex;
+    align-items: center;
+}
+
+.Pointer {
+    width: 20px;
+    height: 20px;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+}
+
+.Completed {
+    color: #2ECC40;
+    background-color: #2ECC40;
+    border-color: #2ECC40;
+}
