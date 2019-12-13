@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Select from '../../../components/UI/Form/Select/Select';
 import classes from './WellMonitoring.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Collapsible from '../../../components/UI/Collapsible/Collapsible';
 
 export default class WellMonitoring extends Component {
   wellMonitoringOptions = [
@@ -52,6 +54,25 @@ export default class WellMonitoring extends Component {
     )
   );
   render() {
-    return <ul>{this.wellMonitoringChecklist}</ul>;
+    return (
+      <Collapsible
+        header={
+          <h3 style={{ lineHeight: 1 }}>
+            <FontAwesomeIcon
+              icon='arrow-right'
+              style={{
+                marginRight: '10px',
+                fontSize: '16px',
+                fontWeight: 'normal'
+              }}
+            />
+            Well Monitoring{' '}
+          </h3>
+        }
+        id='wellMonitoring'
+      >
+        <ul>{this.wellMonitoringChecklist}</ul>
+      </Collapsible>
+    );
   }
 }

@@ -53,7 +53,7 @@ class Handovers extends Component {
             <span>Acknowledge</span>
             <FontAwesomeIcon
               icon='file-signature'
-              style={{ marginLeft: '8px' }}
+              style={{ marginLeft: '5px' }}
               size='lg'
             />
           </Button>

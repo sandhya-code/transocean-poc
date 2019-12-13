@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './RFWellControllEquip.module.css';
 import Checkbox from '../../../components/UI/Form/Checkbox/Checkbox';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Collapsible from '../../../components/UI/Collapsible/Collapsible';
 export const RFWellControllEquip = () => {
   const mudLoggerItem = [
     { parameter: 'FOS in open position?', value: true },
@@ -15,7 +17,19 @@ export const RFWellControllEquip = () => {
     </li>
   ));
 
-  return <ul>{mudLoggerChecklist}</ul>;
+  return (
+    <Collapsible
+      header={
+        <h3 style={{ lineHeight: 1 }}>
+          <FontAwesomeIcon  icon='arrow-right' style={{ marginRight: '10px', fontSize: '16px', fontWeight: 'normal'  }} />
+          RF Well Controll Equip
+        </h3>
+      }
+      id='rfWellControllEquip'
+    >
+      <ul>{mudLoggerChecklist}</ul>
+    </Collapsible>
+  );
 };
 
 export default RFWellControllEquip;

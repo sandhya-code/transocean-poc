@@ -4,7 +4,7 @@ import classes from './EquipmentStatus.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const equipmentStatus = props => (
-  <BorderContainer>
+  <BorderContainer styleObj={{ minHeight: '100px' }}  >
     <div className={classes.Heading}>
       <strong>Equipment Status</strong> (Including Equipment Under Repair)
     </div>
@@ -16,13 +16,13 @@ const equipmentStatus = props => (
       Main IR is dripping hydraulic oil. Plan is to fix after cement job prior
       to POOH
     </p>
-    <p style={{ color: 'red' }}>
+    {/* <p style={{ color: 'red' }}>
       <FontAwesomeIcon
         icon='exclamation-triangle'
         style={{ marginRight: '1rem' }}
       />
       Equipment under repair
-    </p>
+    </p> */}
   </BorderContainer>
 );
 

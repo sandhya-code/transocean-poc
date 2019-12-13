@@ -48,7 +48,7 @@ class DailyInstructions extends Component {
           className={classes.DrillingParameterButton}
           onClick={this.onDrillParametersHandler}
         >
-          Drilling parameters
+          Drilling parameter
         </button>
         <Modal
           show={this.state.showDrillParameters}
@@ -64,10 +64,14 @@ class DailyInstructions extends Component {
         <EquipmentInstruction></EquipmentInstruction>
         <Footer>
           <div style={{ width: '50%', display: 'flex' }}>
-            <Button btnType='Primary' clicked={this.onBackClickHandler}>
+            <Button
+              btnType='Primary'
+              clicked={this.onBackClickHandler}
+              style={{ marginRight: '10px' }}
+            >
               <FontAwesomeIcon
                 icon='arrow-circle-left'
-                style={{ marginRight: '8px' }}
+                style={{ marginRight: '5px' }}
               />
               <span>Back</span>
             </Button>
@@ -86,7 +90,7 @@ class DailyInstructions extends Component {
               <span>Next</span>
               <FontAwesomeIcon
                 icon='arrow-circle-right'
-                style={{ marginLeft: '8px' }}
+                style={{ marginLeft: '5px' }}
               />
             </Button>
           </div>

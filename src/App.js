@@ -39,6 +39,7 @@ import {
 import classes from './App.module.css';
 
 library.add(
+  faBell,
   faCoffee,
   faCheckSquare,
   faBars,
@@ -55,7 +56,6 @@ library.add(
   faChevronCircleUp,
   faLayerGroup,
   faBinoculars,
-  faBell,
   faClipboardCheck,
   faUsers,
   faChalkboardTeacher,
@@ -68,7 +68,7 @@ export default class App extends Component {
     userName: '',
     outgoingDriller: 'Jocob Harrison',
     prevUser: {
-      name: 'Jack McGrath',
+      name: 'Jacob Harrison',
       role: 'Driller',
       timeStamp: 'Monday, 1 Dec'
     },

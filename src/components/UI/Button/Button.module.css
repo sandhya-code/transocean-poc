@@ -6,11 +6,10 @@
     outline: none;
     cursor: pointer;
     font: inherit;
-    margin: 10px;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     min-width: 100px;
     height: 50px;
     font-size: 20px;
@@ -26,6 +25,7 @@
 
 .Success {
     background-color: #2ECC40;
+    padding: 0 1.2rem;
     color: #FFF;
 }
 

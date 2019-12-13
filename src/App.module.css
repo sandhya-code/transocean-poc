@@ -23,7 +23,6 @@
 @media(min-width: 600px) {
   .App {
     width: 98%;
-    min-height: 98vh;
     margin: auto;
   }
 }
@@ -31,7 +30,6 @@
 @media(min-width: 1024px) {
   .App {
     width: 98%;
-    min-height: 98vh;
     margin: auto;
   }
 }

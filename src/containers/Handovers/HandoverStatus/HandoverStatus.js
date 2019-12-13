@@ -32,7 +32,7 @@ const handoverStatus = props => (
               Total Depth: <strong>200000 ft.</strong>
             </span>
             <span>
-              Completed depth: <strong>10000 ft.</strong>
+              Current depth: <strong>10000 ft.</strong>
             </span>
           </small>
         </p>

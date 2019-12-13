@@ -79,7 +79,7 @@ const DrillingParameter = props => {
       </div>
 
       <button className={classes.CloseButton} onClick={props.onClose}>
-        <FontAwesomeIcon icon='times-circle' style={{ marginRight: '8px' }} />
+        <FontAwesomeIcon icon='times-circle' style={{ marginRight: '5px' }} />
         <span>Close</span>
       </button>
     </div>

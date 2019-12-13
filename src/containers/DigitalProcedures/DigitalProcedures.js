@@ -35,6 +35,7 @@ export default class DigitalProcedures extends Component {
   render() {
     return (
       <div className={classes.DigitalProcedures}>
+        <p className={classes.Activity}>Casing</p>
         <div className='row align-items-center'>
           {MENU_ITEMS.map(menu => (
             <div className='col-3'>

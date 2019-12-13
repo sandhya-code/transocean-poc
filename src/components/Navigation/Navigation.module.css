@@ -1,9 +1,21 @@
 .Naviation {
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 5rem;
     margin: 0 0 0.5rem 0;
     color: #FFF;
+}
+
+.Notification {
+    width: 14px;
+    height: 14px;
+    color: red;
+    background-color: red;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid #00546F;
 }
 
 .Title {
@@ -14,6 +26,7 @@
 
 .SignOut,
 .User {
+    position: relative;
     background-color: #F8BD00;
     color: #00546F;
     box-sizing: border-box;

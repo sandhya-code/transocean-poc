@@ -1,29 +1,10 @@
 .HandoverContainer {
-    background-color: ivory;
+    background-color: #FFF;
     box-shadow: 0px 24px 24px #00000033;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-bottom: 0.8rem;
-    height: 70vh;
+    height: calc(100vh - 210px);
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-@media(min-width: 600px) {
-    .HandoverContainer {
-        height: 70vh;
-    }
-}
-
-@media(min-width: 1024px) {
-    .HandoverContainer {
-        height: 70vh;
-    }
-}
-
-
-@media(min-width: 1200px) {
-    .HandoverContainer {
-        height: 71vh;
-    }
 }

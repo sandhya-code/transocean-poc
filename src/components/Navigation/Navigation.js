@@ -14,7 +14,8 @@ const navigation = props => {
       </div>
       <h1 className={Classes.Title}>{props.pageTitle}</h1>
       <div className={Classes.User}>
-        <FontAwesomeIcon icon='user' size='lg' />
+        <FontAwesomeIcon icon='bell' size='lg' />
+        <span className={Classes.Notification}></span>
       </div>
       <div className={Classes.SignOut} onClick={onLogoutClickHandler}>
         <FontAwesomeIcon icon='sign-out-alt' size='lg' />

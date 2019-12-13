@@ -6,7 +6,8 @@
 
 
 .CollapsibleHeader {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     background: #F2F2F2;
     cursor: pointer;
     border-radius: 0.5rem;

@@ -1,6 +1,7 @@
 .Header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .Heading {
@@ -15,5 +16,5 @@
 .SubmittedBy {
     font-family: 'Titillium Web';
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.2;
 }
