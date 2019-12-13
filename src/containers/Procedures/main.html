@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      $(document).ready(function() {
+        $('#navbar .nav-tabs a').click(function() {
+          var position = $(this)
+            .parent()
+            .position();
+          var width = $(this)
+            .parent()
+            .width();
+          $('#navbar .slider').css({ left: +position.left, width: width });
+        });
+        var actWidth = $('#navbar .nav-tabs')
+          .find('.active')
+          .parent('li')
+          .width();
+        var actPosition = $('#navbar .nav-tabs .active').position();
+        $('#navbar .slider').css({
+          left: +actPosition.left,
+          width: actWidth
+        });
+      });
+    </script>
+
+    <style>
+      #navbar {
+        width: 90%;
+        margin: 60px auto;
+      }
+      #navbar .tab-pane {
+        padding: 15px;
+        height: 80px;
+      }
+      #navbar .nav-tabs {
+        position: relative;
+        border: none !important;
+        background-color: #fff;
+        border-radius: 2rem;
+      }
+      #navbar .nav-tabs li {
+        margin: 0px !important;
+      }
+      #navbar .nav-tabs li a {
+        position: relative;
+        margin-right: 0px !important;
+        padding: 1rem 0.5rem !important;
+        font-size: 12px;
+        border: none !important;
+        color: white;
+
+        font-weight: bold;
+      }
+      #navbar .nav-tabs a:hover {
+        border: none;
+      }
+      #navbar .slider {
+        display: inline-block;
+        width: 30px;
+        height: 3.3rem;
+
+        max-height: -webkit-fill-available;
+        max-height: -moz-available;
+        max-height: stretch;
+        border-radius: 3px;
+        background-color: #f8bd00;
+        position: absolute;
+        z-index: 1200;
+        bottom: 0;
+        transition: all 0.4s linear;
+        border-radius: 2rem;
+      }
+      #navbar .nav-tabs .active {
+        background-color: transparent !important;
+        border: none !important;
+        color: #00546f !important;
+
+        z-index: 99999;
+      }
+
+      #navbar .nav-tabs {
+        background-color: #00546f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menubar" id="navbar">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <div class="slider"></div>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="Procedures-tab"
+            data-toggle="tab"
+            href="#Procedures"
+            role="tab"
+            aria-controls="Procedures"
+            aria-selected="true"
+            >Procedures</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="eForms-tab"
+            data-toggle="tab"
+            href="#eForms"
+            role="tab"
+            aria-controls="e-Forms"
+            aria-selected="true"
+            >e-Forms</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="JBD-tab"
+            data-toggle="tab"
+            href="#JBD"
+            role="tab"
+            aria-controls="JBD"
+            aria-selected="false"
+            >JBD</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="Pic-tab"
+            data-toggle="tab"
+            href="#Pic"
+            role="tab"
+            aria-controls="Pic"
+            aria-selected="false"
+          >
+            Pic/Vid</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="MOC-tab"
+            data-toggle="tab"
+            href="#MOC"
+            role="tab"
+            aria-controls="MOC"
+            aria-selected="false"
+            >MOC</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="linked-tab"
+            data-toggle="tab"
+            href="#linked"
+            role="tab"
+            aria-controls="setting"
+            aria-selected="false"
+            >Lined Procedures</a
+          >
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div
+          class="tab-pane fade show active"
+          id="Procedures"
+          role="tabpanel"
+          aria-labelledby="Procedures-tab"
+        >
+          Procedures
+        </div>
+        <div
+          class="tab-pane fade"
+          id="eForms"
+          role="tabpanel"
+          aria-labelledby="eForms-tab"
+        >
+          e-Forms
+        </div>
+        <div
+          class="tab-pane fade"
+          id="JBD"
+          role="tabpanel"
+          aria-labelledby="JBD-tab"
+        >
+          JBD
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Pic"
+          role="tabpanel"
+          aria-labelledby="Pic-tab"
+        >
+          Pic/Vid
+        </div>
+        <div
+          class="tab-pane fade"
+          id="MOC"
+          role="tabpanel"
+          aria-labelledby="MOC-tab"
+        >
+          MOC
+        </div>
+        <div
+          class="tab-pane fade"
+          id="linked"
+          role="tabpanel"
+          aria-labelledby="linked-tab"
+        >
+          Lined Procedures
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

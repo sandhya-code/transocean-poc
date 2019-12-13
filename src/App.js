@@ -8,9 +8,11 @@ import Handovers from '../src/containers/Handovers/Handovers';
 import DailyInstructions from './containers/DailyInstructions/DailyInstructions';
 import DailyChecklist from '../src/containers/DailyChecklist/DailyChecklist';
 import DigitalProcedures from '../src/containers/DigitalProcedures/DigitalProcedures';
+import Procedures from '../src/containers/Procedures/Procedures';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  faHome,
   faCoffee,
   faCheckSquare,
   faBars,
@@ -39,6 +41,7 @@ import {
 import classes from './App.module.css';
 
 library.add(
+  faHome,
   faBell,
   faCoffee,
   faCheckSquare,
@@ -117,21 +120,14 @@ export default class App extends Component {
             {header}
             <DigitalProcedures></DigitalProcedures>
           </Route>
+          <Route path='/workpacks' exact>
+            <Navigation pageTitle='Digital Procedure'></Navigation>
+            {header}
+            <Procedures></Procedures>
+          </Route>
         </Switch>
       </div>
     );
   }
 }
 
-// function App() {
-//   // let state = {
-//   //   userName: '',
-//   //   outgoingDriller: 'Jocob Harrison',
-//   //   prevUser: {
-//   //     name: 'Jack McGrath',
-//   //     role: 'Driller',
-//   //     timeStamp: 'Monday, 1 Dec'
-//   //   },
-//   //   isLoggedIn: false
-//   // };
-// }

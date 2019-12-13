@@ -36,7 +36,7 @@ const header = props => {
       today.getDate() +
       ' ' +
       monthArr[today.getMonth()];
-    return curDate  ;
+    return curDate;
   };
   return (
     <Card>
@@ -49,7 +49,9 @@ const header = props => {
           </p>
         </div>
         <div>
-          <p>{getDate()}</p>
+          <p>
+            <strong>{getDate()}</strong>
+          </p>
         </div>
       </div>
     </Card>

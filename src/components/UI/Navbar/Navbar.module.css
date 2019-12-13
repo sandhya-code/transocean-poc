@@ -1,0 +1,59 @@
+.Navbar {
+    width: 100%;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+}
+
+
+.Navbar .NavTabs {
+    display: flex;
+}
+
+.Navbar .NavTabs .NavItem {
+    list-style: none;
+}
+
+.Navbar .NavTabs .NavItem a {
+    text-decoration: none;
+    padding: 8px 23px;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+}
+
+.Navbar .NavTabs .NavItem.Active a {
+    background-color: #F8BD00;
+    border-radius: 25px;
+    color: var(--color-primary-dark);
+}
+
+.Navbar .NavTabs a:hover {
+    border: none;
+}
+
+
+.Navbar .NavTabs .Active {
+    background-color: transparent !important;
+    border: none !important;
+    z-index: 99999;
+}
+
+.Navbar .NavTabs {
+    background: transparent;
+}
+
+.Navbar .Slider {
+    display: inline-block;
+    width: 30px;
+    height: 3.3rem;
+    max-height: -webkit-fill-available;
+    max-height: -moz-available;
+    max-height: stretch;
+    border-radius: 3px;
+    background-color: #f8bd00;
+    position: absolute;
+    z-index: 1200;
+    bottom: 0;
+    transition: all 0.4s linear;
+    border-radius: 2rem;
+}

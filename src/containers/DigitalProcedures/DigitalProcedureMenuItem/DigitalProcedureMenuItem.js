@@ -10,6 +10,9 @@ export const DigitalProcedureMenuItem = props => {
   }
   const onMenuSelected = title => {
     switch (title) {
+      case 'Work Packs':
+        props.history.push('/workpacks');
+        break;
       case 'Daily Checklist':
         props.history.push('/dailychecklist');
         break;

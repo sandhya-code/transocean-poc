@@ -1,0 +1,31 @@
+.Procedures {
+    display: flex;
+}
+
+.Procedures .HomeButton {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: #00A1D5;
+    border-radius: 25px;
+    line-height: 1;
+    padding: 8px 12px;
+    outline: none;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.Separator {
+    color: #FFF;
+    margin: 4px 0;
+    opacity: 0.2;
+}
+
+.ProcedureStepsContainer {
+    height: calc(100vh - 220px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 12px 0;
+}

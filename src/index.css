@@ -26,9 +26,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #4B4E53;
-  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--color-primary-dark);
   min-height: 100vh;
 }
 
@@ -40,6 +38,7 @@ h5,
 h6 {
   font-family: 'Quantico';
 }
+
 /* a {
   color: #007bff;
   text-decoration: none;
