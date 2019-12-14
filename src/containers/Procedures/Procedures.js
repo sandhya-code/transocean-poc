@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Navbar from '../../components/UI/Navbar/Navbar';
 import classes from './Procedures.module.css';
 import { withRouter } from 'react-router-dom';
@@ -8,10 +7,6 @@ import ProceduresHeader from './ProceduresHeader/ProceduresHeader';
 import ProcedureStep from './ProcedureStep/ProcedureStep';
 
 class Procedures extends Component {
-  static propTypes = {
-    prop: PropTypes
-  };
-
   onHomeClickHandler = () => {
     this.props.history.push('/digitalprocedure');
   };
@@ -36,8 +31,7 @@ class Procedures extends Component {
         <hr className={classes.Separator}></hr>
         <ProceduresHeader></ProceduresHeader>
         <div className={classes.ProcedureStepsContainer}>
-
-        <ProcedureStep></ProcedureStep>
+          <ProcedureStep></ProcedureStep>
         </div>
       </React.Fragment>
     );

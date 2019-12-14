@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import classes from './Navbar.module.css';
 
 export default class Navbar extends Component {
-  static propTypes = {
-    prop: PropTypes
-  };
-
   render() {
     return (
       <div className={classes.Navbar} id='navbar'>

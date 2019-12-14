@@ -1,0 +1,124 @@
+.ProcedureStep {
+    margin-bottom: 1.2rem 0;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 1rem;
+}
+
+
+.ProcedureStepHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-out;
+    padding: 1rem;
+}
+
+.ProcedureStepHeaderContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.ProcedureStepHeader .Number {
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: var(--color-primary-dark);
+    font-weight: bold;
+}
+
+.ProcedureStepHeader .Icon {
+    margin: 0 12px;
+}
+
+.ProcedureStepHeader .Icon img {
+    position: relative;
+    top: 10px;
+}
+
+.ProcedureStepHeader .Text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.ProcedureStepHeader .StepLable {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ProcedureStepHeader .StepStatus {}
+
+.ProcedureStepHeader .StepStatus {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.ProcedureStepBody {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.ProcedureStepBody .ProcedureStepContent {
+    border: 1px solid #CCCCCC;
+    background-color: #E1F8FF;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: .5rem 1rem;
+}
+
+.ProcedureStepContent li {
+    margin: 8px 0;
+}
+
+.ProcedureStepContent ul {
+    padding-left: 40px;
+}
+
+.ProcedureStepContent ul ul {
+    padding-left: 20px;
+}
+
+.Collapse,
+.Open {
+    color: var(--color-primary-dark);
+}
+
+.Collapse {
+    display: none;
+}
+
+.Open {
+    display: inline-block;
+}
+
+/* // input[type='checkbox']  */
+.ToggleControl {
+    display: none;
+}
+
+.ToggleControl:checked+.ProcedureStepHeader .Collapse {
+    display: inline-block;
+}
+
+.ToggleControl:checked+.ProcedureStepHeader .Open {
+    display: none;
+}
+
+
+.ToggleControl:checked+.ProcedureStepHeader+.ProcedureStepBody {
+    overflow: auto;
+    max-height: 300vh;
+}
+
+.ToggleControl:checked+.ProcedureStepHeader {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}

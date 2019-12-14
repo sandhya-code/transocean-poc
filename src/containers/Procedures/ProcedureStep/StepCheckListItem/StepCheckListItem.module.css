@@ -1,0 +1,29 @@
+.StepCheckListItem {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+    justify-content: flex-start;
+    font-weight: 600;
+}
+
+.Disabled {
+    opacity: 0.5;
+}
+
+.StepCheckListItem .Count {
+    width: 5%
+}
+
+.StepCheckListItem .Role {
+    width: 20%
+}
+
+.StepCheckListItem .Text {
+    width: 60%
+}
+
+.StepCheckListItem .Checkbox {
+    width: 15%;
+    text-align: right;
+
+}
