@@ -21,7 +21,6 @@ class ProcedureCheckList extends Component {
   };
 
   render() {
-    console.log(this.state.item);
     const { count, item } = this.state;
     return (
       <li className={classes.ProcedureCheckList} key={count}>

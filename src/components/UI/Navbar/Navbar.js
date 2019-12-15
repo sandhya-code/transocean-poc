@@ -2,11 +2,30 @@ import React, { Component } from 'react';
 import classes from './Navbar.module.css';
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: 'Procedures'
+    };
+  }
+
+  onNavChange = curSelection => {
+    this.setState({ activeTab: curSelection });
+    this.props.onNavChanged(curSelection);
+  };
+
   render() {
+    const { activeTab } = this.state;
     return (
       <div className={classes.Navbar} id='navbar'>
         <ul className={classes.NavTabs} role='tablist'>
-          <li className={[classes.NavItem, classes.Active].join(' ')}>
+          <li
+            className={[
+              classes.NavItem,
+              activeTab === 'Procedures' ? classes.Active : null
+            ].join(' ')}
+            onClick={() => this.onNavChange('Procedures')}
+          >
             <a
               id='Procedures-tab'
               data-toggle='tab'
@@ -15,10 +34,16 @@ export default class Navbar extends Component {
               aria-controls='Procedures'
               aria-selected='true'
             >
-              Procedures
+              Procedures  
             </a>
           </li>
-          <li className={classes.NavItem}>
+          <li
+            className={[
+              classes.NavItem,
+              activeTab === 'eForms' ? classes.Active : null
+            ].join(' ')}
+            onClick={() => this.onNavChange('eForms')}
+          >
             <a
               id='eForms-tab'
               data-toggle='tab'

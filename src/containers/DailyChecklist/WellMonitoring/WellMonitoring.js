@@ -27,12 +27,8 @@ export default class WellMonitoring extends Component {
   };
 
   onSelectedValueChanged = (event, index) => {
-    console.log(event.target.value);
-    console.log('Changed index' + index);
     let checklist = { ...this.state.wellMontitoringItem };
-    console.log('Before Update', checklist);
     checklist[index].value = event.target.value;
-    console.log('After Update', checklist);
 
     this.setState({ wellMontitoringItem: checklist });
   };

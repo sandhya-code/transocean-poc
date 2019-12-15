@@ -1,5 +1,5 @@
 .Navbar {
-    width: 100%;
+    width: 65%;
     border: 1px solid #FFF;
     border-radius: 25px;
 }
@@ -35,7 +35,6 @@
 .Navbar .NavTabs .Active {
     background-color: transparent !important;
     border: none !important;
-    z-index: 99999;
 }
 
 .Navbar .NavTabs {

@@ -23,7 +23,6 @@ export const DigitalProcedureMenuItem = props => {
       default:
         break;
     }
-    console.log(title);
   };
   return (
     <React.Fragment>

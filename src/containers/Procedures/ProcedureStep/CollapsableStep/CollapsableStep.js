@@ -7,7 +7,8 @@ export default class CollapsableStep extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: props.checked
+      checked: props.checked,
+      isComplete: false
     };
   }
   _handleChange = () => {
@@ -22,6 +23,7 @@ export default class CollapsableStep extends Component {
         <input
           id={'ProcedureStep' + this.props.id}
           className={classes.ToggleControl}
+          style={{ width: '100%' }}
           onChange={this._handleChange}
           type='checkbox'
           checked={checked}
@@ -31,16 +33,30 @@ export default class CollapsableStep extends Component {
           className={classes.ProcedureStepHeader}
         >
           <div className={classes.ProcedureStepHeaderContainer}>
-            <div className={classes.Number}>{this.props.stageNumber}</div>
-            <div className={classes.Icon}>
-              <img src={OpenIcon} alt='Open'></img> 
-            </div>
+            {!this.state.isComplete ? (
+              <div className={classes.Number}>{this.props.stageNumber}</div>
+            ) : (
+              <FontAwesomeIcon
+                className={classes.Open}
+                icon='check-circle'
+                style={{ marginRight: '5px', color: '#2ECC40' }}
+                size='2x'
+              />
+            )}
+            {!this.state.isComplete ? (
+              <div className={classes.Icon}>
+                <img src={OpenIcon} alt='Open'></img>
+              </div>
+            ) : null}
+
             <div className={classes.Text}>
               <label className={classes.StepLable}>
                 {this.props.procedureTitle}
               </label>
               <label className={classes.StepStatus}>
-                {this.props.procedureStatus}
+                {!this.state.isComplete
+                  ? this.props.procedureStatus
+                  : 'Completed'}
               </label>
             </div>
           </div>

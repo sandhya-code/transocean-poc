@@ -1,10 +1,12 @@
 .DailyInstructions {
+    position: relative;
     background-color: #FFF;
     box-shadow: 0px 24px 24px #00000033;
     border-radius: 0.5rem;
     padding: 1rem;
+    padding-bottom: 70px;
     margin-bottom: 0.8rem;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
     overflow-x: hidden;
 }

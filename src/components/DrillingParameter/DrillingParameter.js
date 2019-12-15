@@ -7,7 +7,7 @@ const DrillingParameter = props => {
     <div className={classes.DrillingParameter}>
       <div className='container'>
         <div className={[classes.Header, 'row'].join(' ')}>
-          <h3>Drilling Parameter</h3>
+          <h3>Drilling Parameters</h3>
         </div>
         <div className='row' style={{ marginBottom: '2rem' }}>
           <div className='col-4'>
@@ -56,7 +56,7 @@ const DrillingParameter = props => {
               <strong> Pump#1</strong>
             </p>
             <p>
-              SMP<strong>80</strong>
+              SMP<strong> 80</strong>
             </p>
           </div>
           <div className='col-4'>
@@ -64,7 +64,7 @@ const DrillingParameter = props => {
               <strong> Pump#2</strong>
             </p>
             <p>
-              SMP<strong>80</strong>
+              SMP<strong> 80</strong>
             </p>
           </div>
           <div className='col-4'>
@@ -72,7 +72,7 @@ const DrillingParameter = props => {
               <strong> Pump#3</strong>
             </p>
             <p>
-              SMP<strong>100</strong>
+              SMP<strong> 100</strong>
             </p>
           </div>
         </div>

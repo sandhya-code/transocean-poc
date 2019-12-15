@@ -21,36 +21,36 @@ export const DailyChecklist = props => {
         <WellMonitoring></WellMonitoring>
         <MudLogger></MudLogger>
         <RFWellControllEquip></RFWellControllEquip>
+        <Footer styleObj={{ justifyContent: 'space-between' }}>
+          <Button btnType='Primary' clicked={onBackClickHandler}>
+            <FontAwesomeIcon
+              icon='arrow-circle-left'
+              style={{ marginRight: '5px' }}
+            />
+            <span>Back</span>
+          </Button>
+          <Button btnType='Success' clicked={onProceedClickHandler}>
+            <div
+              style={{
+                textAlign: 'start',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              <small style={{ color: '#00546F', lineHeight: 1 }}>
+                Proceed to
+              </small>
+              <h4 style={{ color: '#000', lineHeight: 1.2 }}>
+                Digital Procedure
+              </h4>
+            </div>
+            <FontAwesomeIcon
+              icon='arrow-circle-right'
+              style={{ marginLeft: '5px' }}
+            />
+          </Button>
+        </Footer>
       </div>
-      <Footer styleObj={{ justifyContent: 'space-between' }}>
-        <Button btnType='Primary' clicked={onBackClickHandler}>
-          <FontAwesomeIcon
-            icon='arrow-circle-left'
-            style={{ marginRight: '5px' }}
-          />
-          <span>Back</span>
-        </Button>
-        <Button btnType='Success' clicked={onProceedClickHandler}>
-          <div
-            style={{
-              textAlign: 'start',
-              display: 'flex',
-              flexDirection: 'column'
-            }}
-          >
-            <small style={{ color: '#00546F', lineHeight: 1 }}>
-              Proceed to
-            </small>
-            <h4 style={{ color: '#000', lineHeight: 1.2 }}>
-              Digital Procedure
-            </h4>
-          </div>
-          <FontAwesomeIcon
-            icon='arrow-circle-right'
-            style={{ marginLeft: '5px' }}
-          />
-        </Button>
-      </Footer>
     </React.Fragment>
   );
 };

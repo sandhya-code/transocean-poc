@@ -45,7 +45,7 @@ const header = props => {
           <h2 className={classes.Heading}>Deepwater Conqueror</h2>
           <p className={classes.SubmittedBy}>
             Submitted by: <strong>{props.submittedByUser}</strong>,{' '}
-            {props.submittedByRole}, {getDate('prev')}
+            {props.submittedByRole}, {getDate()}
           </p>
         </div>
         <div>

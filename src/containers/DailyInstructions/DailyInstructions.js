@@ -25,7 +25,6 @@ class DailyInstructions extends Component {
     ]
   };
   onDrillParametersHandler = () => {
-    console.log('Clicked');
     this.setState({ showDrillParameters: true });
   };
 
@@ -48,7 +47,7 @@ class DailyInstructions extends Component {
           className={classes.DrillingParameterButton}
           onClick={this.onDrillParametersHandler}
         >
-          Drilling parameter
+          Drilling parameters
         </button>
         <Modal
           show={this.state.showDrillParameters}

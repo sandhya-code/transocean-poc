@@ -7,12 +7,24 @@ import ProceduresHeader from './ProceduresHeader/ProceduresHeader';
 import ProcedureStep from './ProcedureStep/ProcedureStep';
 
 class Procedures extends Component {
+  state = {
+    showEFroms: false
+  };
   onHomeClickHandler = () => {
     this.props.history.push('/digitalprocedure');
   };
 
   onOpenAll = () => {
     console.log('Collapse Toggle All');
+  };
+
+  oneFroms = () => {};
+  onNavChanged = curSelection => {
+    if (curSelection === 'eForms') {
+      this.setState({ showEFroms: true });
+    } else {
+      this.setState({ showEFroms: false });
+    }
   };
 
   render() {
@@ -26,13 +38,19 @@ class Procedures extends Component {
             <FontAwesomeIcon icon='home' style={{ marginRight: '5px' }} />
             Casing
           </button>
-          <Navbar></Navbar>
+          <Navbar onNavChanged={this.onNavChanged}></Navbar>
         </div>
         <hr className={classes.Separator}></hr>
         <ProceduresHeader></ProceduresHeader>
-        <div className={classes.ProcedureStepsContainer}>
-          <ProcedureStep></ProcedureStep>
-        </div>
+        {!this.state.showEFroms ? (
+          <div className={classes.ProcedureStepsContainer}>
+            <ProcedureStep></ProcedureStep>
+          </div>
+        ) : (
+          <div className={classes.EFormPageUnderConstruction}>
+            <h3>Page under construction</h3>
+          </div>
+        )}
       </React.Fragment>
     );
   }

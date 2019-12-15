@@ -9,7 +9,6 @@ import { withRouter } from 'react-router-dom';
 
 const Login = props => {
   const onLoginHandler = () => {
-    console.log('Login Clicked');
     props.history.push('/handovers');
   };
   return (
