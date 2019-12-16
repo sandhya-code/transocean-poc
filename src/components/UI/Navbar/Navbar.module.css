@@ -1,5 +1,4 @@
 .Navbar {
-    width: 65%;
     border: 1px solid #FFF;
     border-radius: 25px;
 }
@@ -15,7 +14,7 @@
 
 .Navbar .NavTabs .NavItem a {
     text-decoration: none;
-    padding: 8px 23px;
+    padding: 8px 20px;
     color: white;
     display: inline-block;
     line-height: 1;

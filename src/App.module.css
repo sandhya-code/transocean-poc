@@ -4,6 +4,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   min-height: 100vh;
+  width: 1024px;
+  margin: auto;
 }
 
 .Container {
@@ -18,9 +20,29 @@
 [1200 - 1800] other normal screen
 1800px + :    Big Desktop
  */
-
-
 @media(min-width: 600px) {
+  .App {
+    width: 98%;
+    margin: auto;
+  }
+}
+
+@media(min-width: 1024px) {
+  .App {
+    width: 98%;
+    margin: auto;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .App {
+    width: 1024px;
+    margin: auto;
+  }
+}
+
+/* @media(min-width: 600px) {
   .App {
     width: 98%;
     margin: auto;
@@ -41,4 +63,4 @@
     min-height: 98vh;
     margin: auto;
   }
-}
+} */
