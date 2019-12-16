@@ -20,6 +20,7 @@
 
 .Title {
     margin: 0rem auto 0rem 1rem;
+    line-height: 46px;
     /* margin-left: 0.5rem;
     margin-right: auto; */
 }
@@ -30,10 +31,10 @@
     background-color: #F8BD00;
     color: #00546F;
     box-sizing: border-box;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 18px;
-    padding: 0.8rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
     margin: 0 0.5rem;

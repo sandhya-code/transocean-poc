@@ -34,7 +34,7 @@ export default class Navbar extends Component {
               aria-controls='Procedures'
               aria-selected='true'
             >
-              Procedures  
+              Procedures
             </a>
           </li>
           <li
@@ -100,7 +100,7 @@ export default class Navbar extends Component {
               aria-controls='setting'
               aria-selected='false'
             >
-              Lined Procedures
+              LinKed Procedures
             </a>
           </li>
         </ul>

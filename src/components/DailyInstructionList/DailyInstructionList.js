@@ -11,13 +11,13 @@ const DailyInstructionList = props => {
           <h4>
             <FontAwesomeIcon
               icon='arrow-right'
-              style={{ marginRight: '5px' }}
+              style={{ marginRight: '16px' }}
             />
             {instruction.title}
           </h4>
-          <h5 className={classes.DailyInstructionDescription}>
+          <p className={classes.DailyInstructionDescription}>
             {instruction.desc}
-          </h5>
+          </p>
         </div>
       </div>
     );

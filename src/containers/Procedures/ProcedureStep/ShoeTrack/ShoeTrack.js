@@ -34,6 +34,9 @@ export class ShoeTrack extends Component {
       runCount: curCount,
       showRunCount: true
     });
+    setTimeout(() => {
+      this.setState({ showRunCount: false });
+    }, 2000);
   };
   onRunCycleClose = () => {
     this.setState({

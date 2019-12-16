@@ -13,7 +13,7 @@ const DrillingParameter = props => {
           <div className='col-4'>
             <p>WOB</p>
             <p>
-              <strong>15K</strong>
+              <strong>15 K</strong>
             </p>
           </div>
           <div className='col-4'>
@@ -25,7 +25,7 @@ const DrillingParameter = props => {
           <div className='col-4'>
             <p>Torque</p>
             <p>
-              <strong>22k</strong>
+              <strong>22 k</strong>
             </p>
           </div>
         </div>
@@ -33,13 +33,13 @@ const DrillingParameter = props => {
           <div className='col-4'>
             <p>Mud Weight</p>
             <p>
-              <strong>11.8ppg</strong>
+              <strong>11.8 ppg</strong>
             </p>
           </div>
           <div className='col-4'>
             <p>String Weight</p>
             <p>
-              <strong>766K</strong>
+              <strong>766 K</strong>
             </p>
           </div>
           <div className='col-4'>
