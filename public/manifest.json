@@ -1,6 +1,6 @@
 {
-  "short_name": "Digital Procedure",
-  "name": "Transocean Digital Procedure",
+  "short_name": "Digital Procedures",
+  "name": "Transocean Digital Procedures",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#00546F",
   "background_color": "#00546F",
-  "description": "Transocean - Digital Procedure"
+  "description": "Transocean - Digital Procedures"
 }
