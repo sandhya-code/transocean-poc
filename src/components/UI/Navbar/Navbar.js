@@ -100,7 +100,7 @@ export default class Navbar extends Component {
               aria-controls='setting'
               aria-selected='false'
             >
-              LinKed Procedures
+              Linked Procedures
             </a>
           </li>
         </ul>
