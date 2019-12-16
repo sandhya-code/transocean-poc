@@ -1,7 +1,7 @@
 .App {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 49%;
   transform: translate(-50%, -50%);
   min-height: 100vh;
   width: 1024px;
