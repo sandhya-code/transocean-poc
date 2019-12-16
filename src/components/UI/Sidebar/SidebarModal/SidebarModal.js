@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Modal.module.css';
-import Backdrop from '../Backdrop/Backdrop';
+import classes from './SidebarModal.module.css';
+import Backdrop from '../../Backdrop/Backdrop';
 
-const modal = props => {
+const sidebarModal = props => {
   let styleObj = {
-    transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
+    transform: props.show ? 'translateX(0)' : 'translateX(-100vh)',
     opacity: props.show ? '1' : '0'
   };
 
@@ -14,11 +14,11 @@ const modal = props => {
   return (
     <React.Fragment>
       <Backdrop show={props.show} clicked={props.modalClosed}></Backdrop>
-      <div className={styles.Modal} style={styleObj}>
+      <div className={classes.Modal} style={styleObj}>
         {props.children}
       </div>
     </React.Fragment>
   );
 };
 
-export default modal;
+export default sidebarModal;

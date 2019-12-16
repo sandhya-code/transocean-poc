@@ -28,6 +28,7 @@ import {
   faTimesCircle,
   faChevronCircleDown,
   faChevronCircleUp,
+  faChevronRight,
   faLayerGroup,
   faBinoculars,
   faBell,
@@ -59,6 +60,7 @@ library.add(
   faTimesCircle,
   faChevronCircleDown,
   faChevronCircleUp,
+  faChevronRight,
   faLayerGroup,
   faBinoculars,
   faClipboardCheck,
@@ -118,12 +120,12 @@ export default class App extends Component {
             <DailyChecklist></DailyChecklist>
           </Route>
           <Route path='/digitalprocedure' exact>
-            <Navigation pageTitle='Digital Procedure'></Navigation>
+            <Navigation pageTitle='Digital Procedures'></Navigation>
             {header}
             <DigitalProcedures></DigitalProcedures>
           </Route>
           <Route path='/workpacks' exact>
-            <Navigation pageTitle='Digital Procedure'></Navigation>
+            <Navigation pageTitle='Digital Procedures'></Navigation>
             {header}
             <Procedures></Procedures>
           </Route>
@@ -132,4 +134,3 @@ export default class App extends Component {
     );
   }
 }
-

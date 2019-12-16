@@ -1,0 +1,29 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    box-shadow: 16px 19px 28px #0000005D;
+    border-radius: 0px 12px 12px 0px;
+    top: 54px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+
+@media(min-width: 600px) {
+    .Modal {
+        left: -15px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .Modal {
+        left: -15px;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .Modal {
+        left: 0;
+    }
+}

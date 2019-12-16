@@ -158,8 +158,8 @@ export class ShoeTrack extends Component {
                 <div style={{ padding: '2rem' }}>
                   <h1>Hey Jack McGrath!</h1>
                   <p>
-                    Are you sure you submit<strong> SHOE TRACK </strong>
-                    completions status
+                    Are you sure you want to submit<strong> SHOE TRACK </strong>
+                    completion status
                   </p>
                 </div>
               </div>

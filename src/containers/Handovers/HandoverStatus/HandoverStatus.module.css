@@ -33,3 +33,15 @@
     background-color: #2ECC40;
     border-color: #2ECC40;
 }
+
+.ProgressIndicator {
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 6px;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 15px;
+    left: 95%;
+}

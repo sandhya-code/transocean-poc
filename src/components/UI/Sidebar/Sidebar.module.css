@@ -1,0 +1,25 @@
+.Sidebar {
+    width: 240px;
+    height: calc(100vh - 50px);
+    background-color: #2A2E43;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.NavList {
+    list-style: none;
+}
+
+.NavList li {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 35px;
+    padding-top: 34px;
+    padding-left: 16px;
+    font-weight: bold;
+    font-family: Quantico;
+    letter-spacing: 1px;
+}
+
+.NavList li.Active {
+    color: #F8BD00;
+}

@@ -7,6 +7,7 @@ const handoverStatus = props => (
       <div className={[classes.TimeLine, 'col-3'].join(' ')}>
         <span className={[classes.Pointer, classes.Completed].join(' ')}></span>
         <hr className={classes.Completed}></hr>
+        <span className={classes.ProgressIndicator}>50%</span>
       </div>
       <div className='col-3'>
         <hr></hr>
